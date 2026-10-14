@@ -2,14 +2,14 @@ let task = 'Изучить JS';
 
 let completedTaskCount = 0;
 
-function showTask(task) {
+function showTask() {
   if (task === '') {
     console.log('Задача отсутствует');
   } else {
     console.log(`Задача: ${task}`);
   }
 }
-showTask(task);
+showTask();
 
 
 function setTask(taskDescription) {
@@ -23,7 +23,7 @@ setTask('Изучить React');
 console.log(task);
 
 
-function compleTask() {
+function completeTask() {
   if (task === '') {
     console.log('Нет задачи');
   } else {
@@ -31,7 +31,7 @@ function compleTask() {
     completedTaskCount++;
   }
 }
-compleTask();
+completeTask();
 console.log(task);
 console.log(completedTaskCount);
 
@@ -45,4 +45,3 @@ function deleteTask() {
   }
 }
 deleteTask();
-
